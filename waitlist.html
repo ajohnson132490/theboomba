@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+
+/* Menu */
+body {
+  margin: 0;
+  background-color: #282828;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-top: 3px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 5%;
+}
+.menu-item {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  height: 49px;
+  margin: 0;
+  border: 1px solid #0C0032;
+  background-color: #240090;
+}
+.menu-item > p {
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+}
+.menu-item:hover {
+  background-color: #190061;
+}
+.menu-item-active {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  height: 49px;
+  margin: 0;
+  border: 1px solid #0C0032;
+  background-color: #190061;
+  font-weight: bold;
+  text-decoration;
+}
+
+a {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+p {
+  font-size: 20px;
+  color: #C0C0C0;
+}
+
+.emailForm {
+  background-color: #240090;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px
+}
+
+input[type=submit] {
+  border: black 3px;
+  border-radius: 8px;
+  background-color: white;
+  color: #3500D3
+
+}
+input[type=submit]:hover {
+  background-color: #190061;
+  color: white;
+}
+input[type=text] {
+  border: 3px solid #190061;
+  width: 80%;
+  border-radius: 5px;
+  margin: 10px;
+}
+</style>
+<body>
+  <<header>
+  	<div class = "menu">
+      	<div class = "menu-item">
+          	<p><a href="index.html">Home</a></p>
+      	</div>
+      	<div class = "menu-item">
+          	<p><a href="game.html">Game</a></p>
+      	</div>
+      	<div class = "menu-item">
+          	<p><a href="waitlist.html">Email</a></p>
+      	</div>
+      	<div class = "menu-item">
+          	<p><a href="reviews.html">Reviews</a></p>
+      	</div>
+      	<div class = "menu-item">
+          	<p><a href="about.html">About the makers</a></p>
+      	</div>
+  	</div>
+  </header>
+  <br><br><br>
+
+  <!-- Title for sign up page -->
+  <center><h1 style="color: #C0C0C0"> Sign Up Today </h1>
+  <h3 style="color: #C0C0C0"> to enter the waitlist to purchase your very own Boomba!</h3>
+
+  <!-- Email sign up form -->
+  <div class="emailForm">
+    <form action="send.php" method="POST">
+      <p>Enter Your Email:</p> <input type="text" name="email">
+      <br />
+      <input type="submit" value="Submit"></center>
+    </form>
+  </div>
+</body>
+</html>

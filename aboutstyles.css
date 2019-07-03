@@ -1,0 +1,45 @@
+
+/* Formatting For Names/Text */ 
+
+.makerInformation {
+    background-color: #0c0042;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    font-family: 'Noto Serif', serif;
+    min-height: 320px;
+}
+
+.makerInformation p {
+    position: static;
+    white-space: normal;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    max-width: 1500px;
+}
+.makerInformation > h3 {
+    position: relative;
+    left: 50px;
+    z-index: 0;
+}
+.makerInformation img {
+    float: left;
+    width: 200px;
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+ #titleHeader {
+     text-align: center;
+     color: white;
+     -webkit-text-fill-color: white;
+     -webkit-text-stroke-width: -1px;
+     -webkit-text-stroke-color: black;
+ }
+
+ .makerInformation #noImage {
+     /* Add formatting for entries without images if needed */
+ }
